@@ -1,8 +1,7 @@
 # starter program week 2 - perhaps this could be a task
 
 def conversation():
-    print("Welcome to my conversation program")
-    print()
+    print("Welcome to my conversation program", end="\n\n")
 
     # combine the next two lines into one command.
     print("Do you like cycling? Answer yes or no")
