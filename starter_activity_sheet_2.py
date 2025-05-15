@@ -17,6 +17,9 @@ def conversation():
                 sport2 = input("Know any better ones? ")
         if sport2 == "minecraft":
                 print("finally someone with good taste")
+        elif sport2 == "football":
+                print("no")
+                quit()
         else:
                 print(f"I guess {sport2} is alright")
 
@@ -39,25 +42,20 @@ def conversation():
 
 def cities():
         cit = int(input("How many cities are there in England? ONLY NUMBERS OR ELSE! "))
-        
+        try:
+                while cit != 51:
+                        if cit < 51:
+                                print("Too low")
+                        elif cit > 51:
+                                print("Too high")
+                
+                        print("Try again")
 
-        while cit != 51:   
-                if cit < 51:
-                        print("Too low")
-                elif cit > 51:
-                        print("Too high")
-                elif cit == 51:
-                         print("Correct")
-                         quit()
-
-                else:
-                        print("only numbers buddy")
-                print("Try again")
-
-                cit = int(input("How many cities are there in England? ONLY NUMBERS OR ELSE! "))
-
-
+                        cit = int(input("How many cities are there in England? ONLY NUMBERS OR ELSE! "))
                 print("Correct")
+        except ValueError:
+                webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+                quit()
 
 
 
