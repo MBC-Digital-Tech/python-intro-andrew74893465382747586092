@@ -41,9 +41,10 @@ def conversation():
 # Add command here to run the function
 
 def cities():
-        cit = int(input("How many cities are there in England? ONLY NUMBERS OR ELSE! "))
         try:
-                while cit != 51:
+         cit = int(input("How many cities are there in England? ONLY NUMBERS OR ELSE! "))
+        
+         while cit != 51:
                         if cit < 51:
                                 print("Too low")
                         elif cit > 51:
@@ -52,7 +53,7 @@ def cities():
                         print("Try again")
 
                         cit = int(input("How many cities are there in England? ONLY NUMBERS OR ELSE! "))
-                print("Correct")
+                        print("Correct")
         except ValueError:
                 webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
                 quit()
@@ -78,4 +79,3 @@ def notninenine():
                 webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
                 
 
-notninenine()
