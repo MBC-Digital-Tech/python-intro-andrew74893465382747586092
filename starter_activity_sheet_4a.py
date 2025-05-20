@@ -72,4 +72,31 @@ def pentagon():
         right (60)
     end_fill()
 
-pentagon()
+
+
+
+
+def hexagon(): 
+    color('orange', 'blue')
+    begin_fill()
+    for i in range(6):
+        forward (200) 
+        right (60)
+    end_fill()
+
+def envelop():
+    color('orange', 'blue')
+    begin_fill()
+    forward (400)
+    right(90)
+    forward (300)
+    right(90)
+    forward (400)
+    right(90)
+    forward (300)
+    right(75)
+    forward (200)
+    left(90)
+    forward (200)
+
+envelop()
