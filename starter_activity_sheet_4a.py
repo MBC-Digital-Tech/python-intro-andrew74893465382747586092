@@ -26,26 +26,11 @@ def square():
 def triangle():
     color('orange', 'blue')
     begin_fill()
-    forward (200) 
-    right (120)
-    forward (200) 
-    right (120) 
-    forward (200) 
-    right (120)
+    for i in range(3):
+        forward (200) 
+        right (120)
     end_fill()
-    penup()
-    right (180)
-    forward (200)
-    pendown()
-    forward (200) 
-    right (90)
-    forward (200) 
-    right (90) 
-    forward (200) 
-    right (90) 
-    forward (200)
-    right (90)
-    end_fill()
+    
     
 def circle_inside_circle():
     color('orange', 'blue')
@@ -86,6 +71,11 @@ def hexagon():
 
 def envelop():
     color('orange', 'blue')
+    rectangle()
+    right(135)
+    triangle_envelop()
+   
+def rectangle():
     begin_fill()
     forward (400)
     right(90)
@@ -94,9 +84,15 @@ def envelop():
     forward (400)
     right(90)
     forward (300)
-    right(75)
-    forward (200)
+    
+   
+
+def triangle_envelop():
+    color('orange', 'blue')
+    begin_fill()
+    forward (285)
     left(90)
-    forward (200)
+    forward (285)
+    end_fill()
 
 envelop()
