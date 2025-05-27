@@ -10,4 +10,49 @@ def demo():
     right(100)
   done()
 
-demo()
+
+
+
+
+
+
+def hexagon(): 
+    shape("turtle")
+    color('orange', 'green')
+    speed(0)
+    for i in range(75):
+        forward (200)
+        right (95)
+   
+
+
+def petal():
+   for 1 in range(5):
+     begin_fill()
+     color('red')
+     circle(50,100)
+     left(60)
+     circle(50,100)
+     end_fill()
+
+     begin_fill()
+     color('yellow')
+     circle(50,100)
+     left(60)
+     circle(50,100)
+     end_fill()
+
+
+def triangle():
+    
+    for i in range(3):
+      forward(200)
+      right(120)
+      
+
+def trisomething():
+    for i in range(8):
+      triangle()
+      right(45)
+
+trisomething()
