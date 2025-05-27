@@ -47,7 +47,7 @@ def pentagon():
     color('orange', 'blue')
     begin_fill()
     for i in range(6):
-        speed(99999)
+        speed(1)
         forward (200) 
         right (120)
         forward (200) 
@@ -58,7 +58,7 @@ def pentagon():
     end_fill()
 
 
-
+pentagon()
 
 
 def hexagon(): 
@@ -95,4 +95,5 @@ def triangle_envelop():
     forward (285)
     end_fill()
 
-envelop()
+
+

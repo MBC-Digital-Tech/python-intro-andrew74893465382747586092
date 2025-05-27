@@ -56,7 +56,8 @@ def cities():
                         print("Correct")
         except ValueError:
                 webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-                quit()
+                print("You didn't heed my warning")
+                
 
 
 
